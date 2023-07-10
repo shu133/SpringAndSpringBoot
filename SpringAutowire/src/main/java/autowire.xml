@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<beans xmlns="http://www.springframework.org/schema/beans"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:context="http://www.springframework.org/schema/context" xsi:schemaLocation="
+        http://www.springframework.org/schema/beans http://www.springframework.org/schema/beans/spring-beans.xsd
+        http://www.springframework.org/schema/context http://www.springframework.org/schema/context/spring-context.xsd"> <!-- bean definitions here -->
+
+<!-- To activate annotation-->
+<context:annotation-config/>
+
+<bean id="m1" class="com.tnsif.autowireannotation.MunicipalCorporation">
+	<property name="mayorName" value="Priti Ghodke"></property>
+	<property name="area" value="Navi Mumbai"></property>
+</bean>
+
+<bean id="m2" class="com.tnsif.autowireannotation.MunicipalCorporation">
+	<property name="mayorName" value="Priti Tambare"></property>
+	<property name="area" value="Bandra west"></property>
+</bean>
+<bean id="city" class="com.tnsif.autowireannotation.Citizen"></bean>
+</beans>
